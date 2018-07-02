@@ -57,7 +57,19 @@ To find more about npm shorthands access [shorthands-and-other-cli-niceties](htt
 to create a package.json answering manually the questions run  
 $ `npm init`
 
-to create a package.json giving automatically default answers for the questions  
+to create a package.json giving default answers for the questions run  
 $ `npm init -y`
 
+You can set your own default answers. This way, every time you run $ `npm init` you don't
+have to give the same answers over and over. Run the following example to set _danilooa_ as the default author through the property _init-author-name_  
+$ `npm set init-author-name 'danilooa'`  
+To check the available properties access [https://docs.npmjs.com/misc/config](https://docs.npmjs.com/misc/config) and search for _'init-'_.
 
+To check a default answer, in this example the author name, run  
+$ `npm get init-author-name`
+
+To remove a default answer, in this example the author name, run  
+$ `npm config delete init-author-name`  
+
+To check the current default answers in a Linux distribution access the file _.npmrc_. This file is created when the first answer is set and would be located in the user home.  
+$ `less ~/.npmrc`
