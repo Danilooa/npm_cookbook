@@ -1,4 +1,4 @@
-# npm cook book
+# npm cookbook
 
 ### Concepts
 
