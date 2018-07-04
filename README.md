@@ -119,11 +119,13 @@ $ `npm i karma -g`
 
 Fisrt, understand how _semantic versioning_ works clicking [here](https://docs.npmjs.com/getting-started/semantic-versioning).
 
+For any of the following examples, if the flag `--save` is missing, the changes will not be reflected in the _package.json_ file. Additionally, if the flag `--save-exact` is missing, the package version imported will be equal or newer than the given version.
+
 To install the last version of a package, in this case _vue_,  run
 $ `npm install vue`
 
 To install a specific path run  
-$ `npm install vue@1.2.1`
+$ `npm install vue@1.2.1 --save --save-exact`
 
 To install the newest patch of a minor release run  
 $ `npm install vue@1.2`
