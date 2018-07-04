@@ -9,7 +9,10 @@ metadata about the package.
 
 **package.json** is the heart of the npm ecosystem and is responsible for holding metadata about the package. It defines things such as the author, modules, version, start script and test script of a package or project. 
 
+**global packages** are packages that can be run in the command line. Also, they are available for every package in the machine without the need to be installed in each package.
+
 ### Recipes
+
 
 **working with starter projects**
 
@@ -107,14 +110,18 @@ $ `npm i opn-cli -D`
     }  
 ...  
 }  
-``` 
-**listing intalled packages**
+```  
 
-If you have intalled a package, it will be inside directory _node_modules_ on your package home directory.
+To install a global package, in this case _karma_, run  
+$ `npm i karma -g`  
+
+**listing installed packages**
+
+If you have intalled a package, it will be inside the directory _node_modules_ in your package home directory.
 So, to list the packages run  
 $ `ls ./node_modules/`  
 
-To show the package depency tree of your package run  
+To show the dependency tree of your package run  
 $ `npm list`  
 
 To limit the depth of the dependency tree, in this case to 1, run  
@@ -126,5 +133,16 @@ $ `npm list --global true`
 To show the package along with their details run  
 $ `npm list --long true`  
 
-To show the dependency tree in the _json_ format run  
+To show the dependency tree in _json_ format run  
 $ `npm list --json true`  
+
+**uninstalling packages**  
+
+To unintall a package, in this case _vue_, run any of the following commands  
+$ `npm uninstall vue --save`  
+$ `npm rm vue`  
+$ `npm un vue`  
+$ `npm r vue`  
+
+To uninstall a global package just add the flag `g` to the previous commands, for example  
+$ `npm r vue -g`
