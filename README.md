@@ -76,7 +76,7 @@ $ `npm config delete init-author-name`
 To check the current default answers in a Linux distribution access the file _.npmrc_. This file is created when the first answer is set and will be inside in the user home.  
 $ `less ~/.npmrc`
 
-**Installing packages**
+**installing packages**
 
 To install a package, in this example _vue_ run
 $ `npm i vue`
@@ -114,6 +114,25 @@ $ `npm i opn-cli -D`
 
 To install a global package, in this case _karma_, run  
 $ `npm i karma -g`  
+
+**installing a specific version of a package**
+
+Fisrt, understand how _semantic versioning_ works clicking [here](https://docs.npmjs.com/getting-started/semantic-versioning).
+
+To install the last version of a package, in this case _vue_,  run
+$ `npm install vue`
+
+To install a specific path run  
+$ `npm install vue@1.2.1`
+
+To install the newest patch of a minor release run  
+$ `npm install vue@1.2`
+
+To install the newest minor release of a major release run  
+$ `npm install vue@1`
+
+To install the newest _vue_ minor release that is newer than 1.1 and older than 1.9 run  
+$ `npm install vue@">1.1 <1.9"`
 
 **listing installed packages**
 
