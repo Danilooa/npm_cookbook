@@ -108,3 +108,23 @@ $ `npm i opn-cli -D`
 ...  
 }  
 ``` 
+**listing intalled packages**
+
+If you have intalled a package, it will be inside directory _node_modules_ on your package home directory.
+So, to list the packages run  
+$ `ls ./node_modules/`  
+
+To show the package depency tree of your package run  
+$ `npm list`  
+
+To limit the depth of the dependency tree, in this case to 1, run  
+$ `npm list --depth 1`  
+
+To show the global packages run  
+$ `npm list --global true`  
+
+To show the package along with their details run  
+$ `npm list --long true`  
+
+To show the dependency tree in the _json_ format run  
+$ `npm list --json true`  
