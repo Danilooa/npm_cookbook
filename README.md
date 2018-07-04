@@ -84,7 +84,7 @@ It is important to notice the name of the package, in this case _vue_, must be t
 
 To install a package that will run in production along with your application run  
 $ `npm i vue -S`  
-This will also write the version of the intalled package inside your _package.json_ as the following  
+This will also write the version of the installed package inside your _package.json_ as the following  
 ```  
 {  
 ...  
@@ -117,7 +117,7 @@ $ `npm i karma -g`
 
 **listing installed packages**
 
-If you have intalled a package, it will be inside the directory _node_modules_ in your package home directory.
+If you have installed a package, it will be inside the directory _node_modules_ in your package home directory.
 So, to list the packages run  
 $ `ls ./node_modules/`  
 
@@ -138,7 +138,7 @@ $ `npm list --json true`
 
 **uninstalling packages**  
 
-To unintall a package, in this case _vue_, run any of the following commands  
+To uninstall a package, in this case _vue_, run any of the following commands  
 $ `npm uninstall vue --save`  
 $ `npm rm vue`  
 $ `npm un vue`  
