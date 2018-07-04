@@ -47,7 +47,7 @@ to find all npm commands related to a specific subject, in this case _"documenta
 $ `npm help-search documentation`  
 The result of the previous command will be a list of `npm help` calls, run any of them in the terminal.
 
-**Shorthands**
+**shorthands**
 
 npm can be used with a bunch of different shorthands. For example, $ `npm install` can run in this way
 `npm i` since _i_ is a shorhand for _install_.
@@ -135,6 +135,67 @@ $ `npm install vue@1`
 
 To install the newest _vue_ minor release that is newer than 1.1 and older than 1.9 run  
 $ `npm install vue@">1.1 <1.9"`
+
+**changing the version of installed packages**
+
+1. remove the current package's version without changing the _package.json_ file  
+$ `npm rm vue`  
+
+2. edit the _package.json_ file in one of the following ways:  
+    2.1 to get the latest major release  
+    ```  
+    {  
+    ...  
+        "dependencies": {  
+            ...  
+                "vue": "*",  
+            ...  
+        }  
+    ...  
+    }  
+    ```
+    
+    2.2 to get the latest minor release, in this case the latest minor release of version _1_   
+    ```  
+    {  
+    ...  
+        "dependencies": {  
+            ...  
+                "vue": "^1.3.0",  
+            ...  
+        }  
+    ...  
+    }  
+    ```
+    
+    2.3 to get the latest patch release, in this case the latest patch release of version _1.3_   
+    ```  
+    {  
+    ...  
+        "dependencies": {  
+            ...  
+                "vue": "~1.3.0",  
+            ...  
+        }  
+    ...  
+    }  
+    ``` 
+    
+    2.4 to get exactly the version 1.3.2    
+    ```  
+    {  
+    ...  
+        "dependencies": {  
+            ...  
+                "vue": "1.3.2",  
+            ...  
+        }  
+    ...  
+    }  
+    ```  
+3. run the _install_ command  
+$ `npm i`
+
 
 **listing installed packages**
 
