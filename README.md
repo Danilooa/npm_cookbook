@@ -28,7 +28,7 @@ $ `npm start`
 additionally, check if there is an entry in the _package.json_ file for a test script, if yes, run it  
 $ `npm test`
 
-**Getting help**
+**getting help**
 
 _help_ is the command responsible for giving help about the npm usage.
 To show an overview on _help_ type  
@@ -51,8 +51,7 @@ npm can be used with a bunch of different shorthands. For example, $ `npm instal
 
 To find more about npm shorthands access [shorthands-and-other-cli-niceties](https://docs.npmjs.com/misc/config#shorthands-and-other-cli-niceties).
 
-
-**Creating a package.json**
+**creating a package.json**
 
 to create a package.json answering manually the questions run  
 $ `npm init`
@@ -71,5 +70,41 @@ $ `npm get init-author-name`
 To remove a default answer, in this example the author name, run  
 $ `npm config delete init-author-name`  
 
-To check the current default answers in a Linux distribution access the file _.npmrc_. This file is created when the first answer is set and would be located in the user home.  
+To check the current default answers in a Linux distribution access the file _.npmrc_. This file is created when the first answer is set and will be inside in the user home.  
 $ `less ~/.npmrc`
+
+**Installing packages**
+
+To install a package, in this example _vue_ run
+$ `npm i vue`
+It is important to notice the name of the package, in this case _vue_, must be the _name_ written in the _package.json_ of the package being installed.
+
+To install a package that will run in production along with your application run  
+$ `npm i vue -S`  
+This will also write the version of the intalled package inside your _package.json_ as the following  
+```  
+{  
+...  
+    "dependencies": {  
+        ...  
+            "vue": "^2.5.16",  
+        ...  
+    }  
+...  
+}  
+```  
+
+To install a package that will be used only during development time run  
+$ `npm i opn-cli -D`  
+
+```  
+{  
+...  
+    "devDependencies": {  
+        ...  
+            "opn-cli": "^3.1.0",  
+        ...  
+    }  
+...  
+}  
+``` 
