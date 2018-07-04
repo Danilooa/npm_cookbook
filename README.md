@@ -62,7 +62,7 @@ $ `npm init`
 to create a package.json giving default answers for the questions run  
 $ `npm init -y`
 
-You can set your own default answers. This way, every time you run $ `npm init` you don't
+You can set your own default answers. This way, every time you run $ `npm init`, you don't
 have to give the same answers over and over. Run the following example to set _danilooa_ as the default author through the property _init-author-name_  
 $ `npm set init-author-name 'danilooa'`  
 To check the available properties access [https://docs.npmjs.com/misc/config](https://docs.npmjs.com/misc/config) and search for _'init-'_.
