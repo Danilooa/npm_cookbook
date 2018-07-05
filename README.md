@@ -121,8 +121,8 @@ $ `npm i https://github.com/vuejs/vue`
 To install a package from a [gist](https://gist.github.com/) respository you must have the hash of the repository, the hash is that strange character sequence in the repository's url. It is important to remember that the gist repository must have a _package.json_ file. Here comes a example where _ab2bdbe3_ is the repository's hash  
 $ `npm i gist:ab2bdbe3` 
 
-To install a package from a folder or network directory, you should guarantee that the folder has a _package.json_ file and then run  
-$ `npm i /anyPath/.../anyDirectory`
+To install a package from a folder or network directory you should guarantee that the folder has a _package.json_ file and run  
+$ `npm i /anyPath/.../anyDirectory`  
 The previous example will put a reference like in the _package.json_ file
 ```  
 {  
