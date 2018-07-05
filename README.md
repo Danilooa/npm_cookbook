@@ -196,6 +196,22 @@ $ `npm rm vue`
 3. run the _install_ command  
 $ `npm i`
 
+**updating packages**
+
+To get the latest versions of all the packages  
+$ `npm update`  
+
+To get the latest versions of the dev packages  
+$ `npm update --dev`
+
+To get the latest versions of the prod packages  
+$ `npm update --prod`
+
+To get the latest version of one specific package, in this case _vue_, run  
+$ `npm update vue`
+
+To get the latest version of the global packages  
+$ `npm update -g`  
 
 **listing installed packages**
 
