@@ -123,7 +123,7 @@ $ `npm i gist:ab2bdbe3`
 
 To install a package from a folder or network directory you should guarantee that the folder has a _package.json_ file and run  
 $ `npm i /anyPath/.../anyDirectory`  
-The previous example will put a reference like in the _package.json_ file
+The previous example will put a reference like the above in the _package.json_ file
 ```  
 {  
 ...  
