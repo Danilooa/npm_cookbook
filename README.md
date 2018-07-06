@@ -384,6 +384,6 @@ $ `npm do_something`
     2. For minor releases run $ `npm version minor`
     3. For major releases run $ `npm version major` 
 6. Run $ `git tag the_version_as_in_the_package_file`  
-7. Run $ `git push --tag beta`
+7. Run $ `git push --tags `
 9. Run $ `git push`
-8. Finally, run $ `npm publish`
+8. Finally, run $ `npm publish --tag beta`
