@@ -375,15 +375,11 @@ $ `npm do_something`
 
 1. Get into the package's directory
 2. Change the package as desired
-3. If it is the first beta version, postfix the version in the _package.json_ file with `-beta.0` otherwise replace `0` with any other number. For example, if it is the first `v2.0.0` beta version, it will be   `v2.0.0-beta.0`, otherwise it will be something like `v2.0.0-beta.1`
+3. If it is the first beta version, postfix the version in the _package.json_ file with `-beta.0` otherwise replace `0` with any other number. For example, if it is the first `v2.0.0` beta version, it will be `v2.0.0-beta.0`, otherwise it will be something like `v2.0.0-beta.1`
 4. Create a commit by running
     1. $ `git add .`
     2. $ `git commit -m "any message"`
-5. Run one of the following commands according to the kind of change made
-    1. For patch releases run $ `npm version patch`
-    2. For minor releases run $ `npm version minor`
-    3. For major releases run $ `npm version major` 
-6. Run $ `git tag the_version_as_in_the_package_file`  
-7. Run $ `git push --tags `
-9. Run $ `git push`
+5. Run $ `git tag the_version_as_in_the_package_file`  
+6. Run $ `git push --tags `
+7. Run $ `git push`
 8. Finally, run $ `npm publish --tag beta`
