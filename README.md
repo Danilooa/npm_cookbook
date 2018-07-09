@@ -81,7 +81,7 @@ $ `less ~/.npmrc`
 **installing packages**
 
 To install a package, such as _vue_, run  
-$ `npm i vue`
+$ `npm i vue`  
 It is important to notice that the package's name, in this case _vue_, must be the _name_ written in the _package.json_ file of the desired package.
 
 To install a package that will run in production run  
