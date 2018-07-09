@@ -86,7 +86,7 @@ It is important to notice that the package's name, in this case _vue_, must be t
 
 To install a package that will run in production run  
 $ `npm i vue -S`  
-This will also write the version of the installed package inside your _package.json_ as the following  
+This will also writes the version of the installed package inside your _package.json_ as the following  
 ```  
 {  
 ...  
